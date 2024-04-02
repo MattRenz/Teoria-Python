@@ -1,0 +1,52 @@
+
+MULTI THREADING
+
+Programma MultiThreading
+Il thread è un'entità di esecuzione all'interno di un processo, che esegue istruzioni in modo indipendente 
+dagli altri thread del processo. In un programma multithreaded, più thread vengono creati e avviati, 
+ognuno dei quali esegue una parte del programma in parallelo agli altri thread.
+
+E' una tecnicna di programmazione he consente di eseguire più thread contemporaneamente 
+ciò significa che un singolo programma python può eseguire più attività contemporaneamente
+aumentando l'efficenza e la capacità di risposta del programma 
+
+
+SERVER
+
+un server è sempre in esecuzione, è sempre in ascolto su un canale di rete e aspetta che dalla 
+rete arrivi un comando. Fa due cose 1) Si mette in ascolto 2) Quando arriva un comando lo esegue. 
+
+Fornisce servizi o risorse a dispositivi noti come client. Questo processo di comunicazione tra 
+client e server avviene attraverso un protocollo chiamato HTTP (server web) o come abbiamo visto 
+per l'email SMTP (posta elettronica)
+
+
+              +----------+
+              |   Client |
+              +----------+
+                   |
+                   | Richiesta
+                   |
+              +----------+
+              |   Server |
+              +----------+
+                   |
+                   | Risposta
+                   |
+              +----------+
+              |   Client |
+              +----------+
+
+
+    TCP (transmission control protocol) è un protocollo di trasporto che si osccupa di far si che quando mandiamo 
+    un buffer di dati arrivi bene e in modo integro. I dati che che sono inviati in segmenti di dimensioni varaibili 
+    detti pacchetti TCP, e controlla che questi pacchetti arrivino nel'ordine che l'abbiamo mandati, e tutti.
+
+    In oltre TCP utilizza un meccanismo di controllo che regola la velocità di trasimisisone dei dati in
+    base alla capacità della rete evitando così congestionamento 
+
+
+In un server quindi dovremmo specificare anche il canale TCP che volgiamo utilizzare. Quindi in un server:
+1) Si mette in ascolto su un indirizzo IP 2) In ascolto su un canale TCP 
+
+Un server può avere un solo indirizzo IP ma più canali TCP

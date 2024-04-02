@@ -1,0 +1,54 @@
+HTTP GET
+
+     +-------------+                   +-------------+
+     |             |                   |             |
+     |    Client   |                   |    Server   |
+     |             |                   |             |
+     +-------------+                   +-------------+
+           |                                    |
+           |          HTTP GET Request           |
+           |----------------------------------->|
+           |             Include URL             |
+           |                                    |
+           |                                    |
+           |                                    |
+           |          HTTP Response              |
+           |<-----------------------------------|
+           |                                    |
+
+In questo diagramma, il client invia una richiesta HTTP GET al server web. 
+La richiesta include l'URL della risorsa da recuperare. Il server riceve la richiesta HTTP GET 
+e cerca la risorsa richiesta. Infine, il server invia una risposta HTTP al client che include la
+risorsa richiesta. Il client può quindi visualizzare o elaborare la risorsa come desiderato.
+
+
+HTTP POST 
+
+     +-------------+                   +-------------+
+     |             |                   |             |
+     |    Client   |                   |    Server   |
+     |             |                   |             |
+     +-------------+                   +-------------+
+           |                                    |
+           |          HTTP POST Request          |
+           |----------------------------------->|
+           |          Include Data in Body       |
+           |                                    |
+           |                                    |
+           |                                    |
+           |          HTTP Response              |
+           |<-----------------------------------|
+           |                                    |
+
+In questo diagramma, il client invia una richiesta HTTP POST al server web. 
+La richiesta include i dati da inviare, che vengono inclusi nel corpo della richiesta. 
+Il server riceve la richiesta HTTP POST e elabora i dati inclusi nel corpo della richiesta. 
+Infine, il server invia una risposta HTTP al client per confermare che i dati sono stati ricevuti 
+e elaborati correttamente.
+
+
+
+
+
+
+

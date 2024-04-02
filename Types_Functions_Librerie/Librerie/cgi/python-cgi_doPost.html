@@ -1,0 +1,31 @@
+
+<!-- 
+    <form> Qui definiamo il form, 
+    method = post si riferisce al fatto che i dati saranno inviati tramite richeista HTTP Post
+    action = "http://127.0.0.1:8080" ulr dove mandare la richiesta, specificare ul con indirizzo IP e posta 
+-->
+<form method="post" action="c"> 
+
+    <!-- 
+        Label è un eticchetta per il campo di input, il parametro for="name" deve essere uguale al'Id presenre dentro input
+     -->
+    <label for="name">Name:</label>
+    <!-- 
+        <input> qui definiamo che l'utente deve compiere un azione
+        tyoe = di tipo testo
+        id = "name" stesso del attributo for dentro <label>
+        name = "name" specifica il nome del campo ceh visualizzato per inviare i dati al server web (lo stesso ceh è dentro il file python con il metodo getValue())
+    -->
+    <input type="text" id="name" name="name"><br>
+
+    <!-- Stesso procedumento per cognome ed email -->
+    <label for="cognome">Cognome:</label>
+    <input type="text" id="cognome" name="cognome"><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br>
+
+    <!-- <input type="submit">, indica che stiamo usando un bottone. Questo bottone una volta premuto inverà i dati al server web, che gli riceverà e gli elaborerà come visto nel file di python  -->
+    <input type="submit" value="Submit">
+
+</form>
+

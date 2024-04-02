@@ -1,0 +1,3 @@
+ciao questo e un testo dentro un file txt Sto usando python
+
+Ora sono andato a capoSto scrivendo dentro il file python
